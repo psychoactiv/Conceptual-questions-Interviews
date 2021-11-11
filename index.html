@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conceptual questions</title>
+    <style>
+      :root {
+        --primary: lightgreen;
+        --secondary: white;
+      }
+      * {
+        margin: 0px;
+        
+        padding: 0px;
+        font-size: larger;
+      }
+      strong {
+        color: var(--primary);
+      }
+      li {
+        color: var(--secondary);
+      }
+      .first {
+        width: 800px;
+        margin: 0px auto;
+        background-color: darkslategray;
+        color: floralwhite;
+        padding: 50px;
+        border-right: 5px solid cyan;
+        border-left: 5px solid cyan;
+      }
+      header {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+      body {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <header>
+        <h1>Conceptual questions</h1>
+      </header>
+
+      <ol>
+        <li><strong>What is DOM?</strong></li>
+        <div>
+          -DOM stands for DOCUMENT OBJECT MODEL. It is how web browsers
+          represent internally.
+        </div>
+        <br />
+        <div>
+          i)<strong>Document -</strong> we can think of document as any piece of
+          papers that represents a certain information like books , articles,
+          etc. In case of web developers a document is a name for web page
+        </div>
+        <br />
+
+        <div>
+          ii)<strong>Object -</strong> The things which are on web pages
+          (Documents) are called objects sometimes called elements or nodes.
+          examples:- <br /><strong>----Content:-</strong> The most obvious
+          objects on a web page are the content. These can include words,
+          videos, images, and more. <br />
+          <strong>----Elements:-</strong> These include divs, containers, and
+          sectons. You may not see these elements, but you see how they affect
+          the visible elements because they organize those elements on the web
+          page.<br />
+          <strong>----Attributes:-</strong> Every element on a web page has
+          attributes.These include classes, styles, and sizes for example. These
+          are objects in the DOM, but they dont have features like contents and
+          elements.
+        </div>
+        <br />
+        <div>
+          iii)<strong>Model -</strong> A model is a representation of something,
+          and it helps us understand how something is put together. There are
+          models for many things that need to be universally understood,
+          analyzed, and used.
+        </div>
+        <br />
+        <div>
+          <strong> So what exactly is a DOM? </strong><br />
+          The DOM is represented as a type of data structure called a tree.
+          Every object in the DOM is hierarchically under another object, and
+          any object can have multiple children but only one parent.
+        </div>
+        <br /><br />
+
+        <li><strong>What is an API?</strong></li>
+        <br />
+        <div>
+          <strong>API</strong> stands for
+          <strong>Application Programming Interface</strong>
+        </div>
+        <br />
+        <div>
+          API is a set of routine, protocol and tools for building software
+          applications. It basically connects two diffrent set of programs or
+          data which gives an interaction between them. Basically connecting
+          server-side to client side.
+        </div>
+        <br />
+        <li><strong>What do you mean by semantic HTML ?</strong></li>
+        <br />
+        <div>
+          We can structure a HTML page anyhow without caring about its meaning
+          the output will be same there will be no major changes in it but at
+          the same time the meaning of the page might be misaligned for e.g:-
+          <br />
+          <pre><code>&lt;H1&gt;FOO&lt;H1&gt; &lt;p&gt;FOO&lt;p&gt;
+          </code></pre>
+          We can use both H1 and P tags for heading by increasing the size of
+          text of p tag but this might result in wrong meaning, We can use label
+          tag for better understanding for visually impared persons. The tag
+          will be recognized by the browser and will read it's content. for
+          e.g:- <br />
+          <pre><code>&lt;label for="FOO"&gt;FOO&lt;H1&gt;</code></pre>
+        </div>
+        <li>
+          <strong
+            >What is the diffrence between inline and inline-block?</strong
+          >
+        </li>
+        <br />
+        <div>
+          First lets understand what is inline and block element.<br />
+          <strong>Inline elements:-</strong>There is no line break around this
+          element if you place another line ahead or behind of it, the element
+          or the line will continue from there only. In short the element just
+          takes it's own content's space.<br />
+          <strong>Block elements:-</strong>Block element does'nt let another
+          line or tag interupt with it's spacing. In short it applies a line
+          break after and before the element.
+          <br />
+          <strong>Inline-Block elements:-</strong>
+          By default we can't alter or reset the margin or padding for up and
+          bottom of the inline element that's where Inline-Block comes to use we
+          can alter inline-block's margin and padding.
+        </div>
+        <li><strong>What are promises?</strong></li>
+        <div>
+          Javascript is an <strong>interpreted language</strong> what that means
+          is that it executes code line by line thus it cannot perform
+          multi-tasking so it uses it's <strong>asynchronous</strong> computing
+          feature and by using it. It promises that when the value is obtained
+          or the data is fetched it will be returning the value or an error
+          promises has three states resolved, pending and rejected.
+        </div>
+        <li>What are the ways of linking stylesheet to HTML file ?</li>
+        <br />
+        <div>
+          We can link a css file in HTML in three ways:- <br />
+          i) inline css :- by using the style attribute inside HTML elements
+          <br />
+          ii) internal css :- by using a &lt;style&gt; element in the
+          &lt;head&gt; section <br />
+          iii) external css :- by using a &lt;link&gt; element to link to an
+          external CSS file
+        </div>
+        <br />
+        <li>
+          <strong>Consequences of placing script tag inside head ?</strong>
+        </li>
+        <br />
+        <div>
+          The script tag should be placed above the closing body tag after
+          writting all the HTML code. <br />
+          If the script tag is used in head the HTML code will not be executed.
+          <br />
+          Same goes for if the script tag is placed in between of the HTML code.
+          In this case script could only read the code written above it.
+        </div>
+        <br />
+        <li><strong>Differences between Vanila JS & React JS ?</strong></li>
+        <br />
+        <div>
+          --React is a framework which is written in javascript language.
+          whereas javascript is a programming language. <br />
+          --While we can write all the UI using javascript but we can write
+          efficient code using react with the help of components, Components can
+          be reused thus saves a lot of time for e.g if we design a certain
+          "like button" for a app we can use it in diffrent pages without
+          writing again. <br />
+          --Using React we can built single-page appliction which means there is
+          no reloading while going for next page. <br />
+          --Javascript uses Actual DOM and react uses virtual DOM <br />
+        </div>
+        <li><strong>What is Git?</strong></li>
+        <br />
+        <div>
+          Git is a version control tool which helps us to manage our code and
+          modify the code in github accordingly. We can use git through Command
+          Line Interface. It makes it way easier to work collabotratively with
+          other developers.
+        </div>
+        <li><strong>What is Github?</strong></li>
+        <br />
+        <div>
+          Github is a platform where developers all over the world store their
+          code and projects and can collabrate and work from anywhere around the
+          world.
+        </div>
+        <li><strong>What is branching?</strong></li>
+        <br />
+        <div>
+          Branching is used to copy a code from a main branch (master branch)
+          this helps us to get access of the code individually from main
+          branches and we can modify according to our needs and then we can
+          create a pull request
+        </div>
+        <li>
+          <strong>What is declarative coding and imperative coding?</strong>
+        </li>
+        <div>
+          <strong>Declarative programming:-</strong> In this programming style
+          programmers are concerned with what the output will be and not how we
+          will get the output. <br />
+          <strong>Imperative programming:-</strong> In this programming style
+          programmers are concerned with how we will get the output.
+        </div>
+        <li><strong> What are callBack functions ? </strong></li>
+        <div>
+          Callbacks are functions which were passed as an aruguements to another
+          function without the parenthesis involved in it.
+        </div>
+        <li><strong> What is useState in react ? </strong></li>
+        <div>
+          With the help of useState we can update the state of a functional
+          components. <br />
+          useState is always declared with two array variable inside it. <br />
+          <strong>Initial state:- </strong> Initial state is consisted of
+          current value of useState which will be given. <br />
+          <strong>updated state:- </strong> Updated state consists of the state
+          which will be updated on a user input or a specific event.
+        </div>
+        <li>
+          <strong> Diffrence between semantic and Non-sematic HTML ? </strong>
+        </li>
+        <div>
+          <strong>Semantic HTML:-</strong> Semantic HTML means HTML which has
+          meaning to it. and can be read by screen readers for disabled folks.
+          <br />
+          e.g:- aside, aritcle, nav, section, etc <br />
+          <strong>Non-Semantic HTML:-</strong> Non-semantic HTML means which has
+          no meaning to it. Screen readers can't read it. <br />
+          e.g:- div, span, etc.
+        </div>
+      </ol>
+    </div>
+  </body>
+</html>
